@@ -1,4 +1,4 @@
-# NCEM2022-Response-Time-Modeling-with-Item-Position-and-Total-Time-Limitation### **Modeling the Sequential Response Time with Item Position and Total Time Limits**
+**Modeling the Sequential Response Time with Item Position and Total Time Limits**
 
 Chen, Y., Yang Y., Zhu S., & Lee, Y.  
 
