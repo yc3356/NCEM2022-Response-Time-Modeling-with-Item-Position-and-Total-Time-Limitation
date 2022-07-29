@@ -1,0 +1,20 @@
+model{  
+  for (n in 1:N){
+    RT[n] ~ dlnorm(beta[item[n]]-tau[II[n]]+k*(JJ[n]-1), epsilon)
+  }
+  
+  mu_b ~ dnorm(logmeanT,0.1)
+  
+  sd_b ~ dunif(0,5)
+  tau_b = 1/pow(sd_b,2)
+  k ~ dnt(0,1,7)
+  epsilon ~ dgamma(1,1)
+  
+  for (j in 1:J){
+    beta[j] ~ dnorm(mu_b,tau_b)
+  }
+  for (i in 1:I){
+    tau[i] ~ dnorm(0,1) 
+  }
+}
+
